@@ -34,7 +34,6 @@ export const getStaticProps: GetStaticProps = async ({params}) => {
   try {
 		// Call an external API endpoint to get posts.
 		const post = await fetcher(`${FirestoreBlogPostsURL}/${params.pid}`); // grabs the whole document with the provided document id (in this case pid)
-		console.log(post)
     // By returning { props: posts }, the Blog component
 		// will receive `posts` as a prop at build time
 		return {

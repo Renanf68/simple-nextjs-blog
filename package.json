@@ -1,7 +1,9 @@
 {
-  "name": "rs-code-drops",
+  "name": "simple-nextjs-blog",
   "version": "0.1.0",
-  "private": true,
+  "author": "@renan_costa_m",
+  "license": "MIT",
+  "main": "server.js",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -9,6 +11,9 @@
     "clean": "rimraf nextjs/",
     "predeploy": "yarn clean && next build",
     "deploy": "firebase deploy"
+  },
+  "engines": {
+    "node": "10"
   },
   "dependencies": {
     "firebase": "^7.23.0",
